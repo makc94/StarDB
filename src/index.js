@@ -1,12 +1,5 @@
-class SwapiService {
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./components/app";
 
-  async getResource() {
-    const res = await fetch(url);
-
-    if (!res.ok) {
-      throw new Error(`Could not fetch ${url}` + ` , received ${res.status}`);
-    }
-
-    return await res.json();
-  }
-}
+ReactDOM.render(<App />, document.getElementById("root"));
